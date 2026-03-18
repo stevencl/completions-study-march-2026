@@ -34,7 +34,7 @@ Returns the total price of all items in the cart (price × quantity for each ite
 const cart = new ShoppingCart();
 cart.addItem("Apple", 1.50, 3);   // 4.50
 cart.addItem("Banana", 0.75, 2);  // 1.50
-cart.totalPrice();  // Returns 6.0
+cart.totalPrice();  // Returns 6.00
 ```
 
 ## 3. `checkout()`
