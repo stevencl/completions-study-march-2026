@@ -33,7 +33,7 @@ Returns the total price of all items in the cart (price × quantity for each ite
 cart = ShoppingCart()
 cart.add_item("Apple", 1.50, 3)   # 4.50
 cart.add_item("Banana", 0.75, 2)  # 1.50
-cart.total_price()  # Returns 6.0
+cart.total_price()  # Returns 6.00
 ```
 
 ## 3. `checkout()`
