@@ -35,6 +35,13 @@ class TestTotalPrice(unittest.TestCase):
         cart.add_item("Banana", 0.75, 2)
         self.assertEqual(cart.total_price(), 6.0)
 
+    def test_total_price_after_removing_item(self):
+        cart = ShoppingCart()
+        cart.add_item("Apple", 1.50, 3)
+        cart.add_item("Banana", 0.75, 2)
+        cart.remove_item("Apple")
+        self.assertEqual(cart.total_price(), 1.5)
+
 
 class TestCheckout(unittest.TestCase):
     def test_single_item_receipt(self):
